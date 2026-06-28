@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr" data-season="ete">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clémentine Moury — Autrice indépendante de dark romance et romantasy. Découvrez la trilogie L'Ascension de l'Héritière.">
+  <title>Murmure des Messages — Clémentine Moury</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cmu-serif" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header js-header" role="banner">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__logo" href="#accueil" aria-label="Murmure des Messages — Accueil">cm</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#livres">Les livres</a></li>
+        <li><a href="#commander">Commander</a></li>
+        <li><a href="#salons">Salons</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="season-btn js-season-btn" aria-label="Changer de saison">
+          <span class="js-season-icon">☀️</span>
+        </button>
+        <button class="nav__hamburger js-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="s-hero" id="accueil" aria-label="Accueil">
+      <div class="hero__wash" aria-hidden="true"></div>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <div class="hero__center">
+        <div class="hero__frame reveal-hero" style="animation-delay:.18s">
+          <span class="hero__badge">Autrice indépendante · Dark romance</span>
+          <h1 class="hero__title">Murmure<br><em>des messages</em></h1>
+        </div>
+        <p class="hero__tagline reveal-hero" style="animation-delay:.42s">Des histoires qui touchent le cœur</p>
+        <div class="hero__ctas reveal-hero" style="animation-delay:.58s">
+          <a href="#livres" class="btn btn--dark">Découvrir les livres</a>
+          <a href="#commander" class="btn btn--outline">Commander en direct</a>
+        </div>
+      </div>
+
+      <div class="hero__cue" aria-hidden="true">
+        <span class="hero__cue-text">défiler</span>
+        <span class="hero__cue-arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- ═══ MES LIVRES ═══ -->
+    <section class="s-livres" id="livres" aria-label="Mes livres">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-eyebrow">La bibliothèque</div>
+          <h2 class="section-title">Mes <em>livres</em></h2>
+          <p class="section-subtitle">L'Ascension de l'Héritière — une trilogie de dark romance.</p>
+        </div>
+
+        <div class="books-grid" data-reveal-group>
+          <article class="book-card" data-reveal-item>
+            <div class="book-cover book-cover--1">
+              <span class="book-cover__tome">Tome I</span>
+              <span class="book-cover__name">Fragments</span>
+              <span class="book-cover__line"></span>
+              <span class="book-cover__hint">couverture · à déposer</span>
+            </div>
+            <h3 class="book-title">Fragments</h3>
+            <p class="book-desc">Tout commence par une faille. Le premier souffle de l'ascension.</p>
+            <div class="book-links">
+              <a href="https://amzn.eu/d/0aiteNMt" target="_blank" rel="noopener" class="btn btn--dark btn--sm">Voir sur Amazon</a>
+              <a href="https://a.co/d/066gCTnJ" target="_blank" rel="noopener" class="book-link-ca">Canada ↗</a>
+            </div>
+          </article>
+
+          <article class="book-card" data-reveal-item>
+            <div class="book-cover book-cover--2">
+              <span class="book-cover__tome">Tome II</span>
+              <span class="book-cover__name">Héritage</span>
+              <span class="book-cover__line"></span>
+              <span class="book-cover__hint">couverture · à déposer</span>
+            </div>
+            <h3 class="book-title">Héritage</h3>
+            <p class="book-desc">Le poids du sang et des promesses. Rien ne se transmet sans prix.</p>
+            <div class="book-links">
+              <a href="https://amzn.eu/d/0ar2TJym" target="_blank" rel="noopener" class="btn btn--dark btn--sm">Voir sur Amazon</a>
+              <a href="https://a.co/d/08CUNtn4" target="_blank" rel="noopener" class="book-link-ca">Canada ↗</a>
+            </div>
+          </article>
+
+          <article class="book-card" data-reveal-item>
+            <div class="book-cover book-cover--3">
+              <span class="book-cover__tome">Tome III</span>
+              <span class="book-cover__name">Pouvoir</span>
+              <span class="book-cover__line"></span>
+              <span class="book-cover__hint">couverture · à déposer</span>
+            </div>
+            <h3 class="book-title">Pouvoir</h3>
+            <p class="book-desc">L'aboutissement. Régner, ou tout perdre — il faudra choisir.</p>
+            <div class="book-links">
+              <a href="https://amzn.eu/d/0hNmE3xI" target="_blank" rel="noopener" class="btn btn--dark btn--sm">Voir sur Amazon</a>
+              <a href="https://a.co/d/0fRBjJra" target="_blank" rel="noopener" class="book-link-ca">Canada ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="coming-soon" data-reveal>
+          <div class="coming-soon__cover">
+            <span class="coming-soon__cover-title">L'Académie<br>Heredes</span>
+            <span class="coming-soon__cover-hint">à venir</span>
+          </div>
+          <div class="coming-soon__info">
+            <div class="section-eyebrow coming-soon__eyebrow">Bientôt · Nouvelle saga</div>
+            <h3 class="coming-soon__title">L'Académie Heredes <em>— Tome 1</em></h3>
+            <p class="coming-soon__desc">Une nouvelle romantasy en cours d'écriture. Sortie visée <strong>août 2026</strong>, avec une campagne <strong>Ulule en octobre 2026</strong> pour donner vie à l'objet-livre.</p>
+            <div class="coming-soon__actions">
+              <a href="#contact" class="btn btn--dark">Être prévenue de la sortie</a>
+              <span class="btn btn--ghost">Ulule — lien à l'ouverture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ COMMANDER EN DIRECT ═══ -->
+    <section class="s-commander" id="commander" aria-label="Commander en direct">
+      <div class="container">
+        <div class="commander-grid">
+
+          <div class="commander-info" data-reveal>
+            <div class="section-eyebrow commander-eyebrow">Sans intermédiaire</div>
+            <h2 class="section-title">Commander <em>en direct</em></h2>
+            <p class="commander-subtitle">Un livre dédicacé, expédié de ma main à la vôtre.</p>
+
+            <div class="steps">
+              <div class="step">
+                <div class="step__num">1</div>
+                <div>
+                  <div class="step__title">Vous m'écrivez</div>
+                  <p class="step__desc">Remplissez le formulaire : il génère un e-mail pré-rempli avec votre choix de tomes et la livraison.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__num">2</div>
+                <div>
+                  <div class="step__title">Je confirme &amp; vous encaisse</div>
+                  <p class="step__desc">Je réponds avec le total. Paiement par carte (SumUp) ou virement — pas de paiement en ligne sur le site.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__num">3</div>
+                <div>
+                  <div class="step__title">Réception</div>
+                  <p class="step__desc">Livraison en France ou au Canada, ou retrait en main propre (salons, événements).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="order-form" id="order-form" data-reveal>
+            <h3 class="order-form__title">Votre commande</h3>
+
+            <div class="form-group">
+              <div class="form-label">Quel(s) livre(s) ?</div>
+              <div class="checkboxes">
+                <label class="check-label"><input type="checkbox" name="livres" value="Fragments (Tome I)"> Fragments — Tome I</label>
+                <label class="check-label"><input type="checkbox" name="livres" value="Héritage (Tome II)"> Héritage — Tome II</label>
+                <label class="check-label"><input type="checkbox" name="livres" value="Pouvoir (Tome III)"> Pouvoir — Tome III</label>
+                <label class="check-label"><input type="checkbox" name="livres" value="La trilogie complète"> La trilogie complète</label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group form-group--sm">
+                <div class="form-label">Quantité</div>
+                <select name="quantite" class="form-select">
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+                </select>
+              </div>
+              <div class="form-group form-group--lg">
+                <div class="form-label">Livraison</div>
+                <div class="radios">
+                  <label class="radio-label"><input type="radio" name="livraison" value="France" checked> France</label>
+                  <label class="radio-label"><input type="radio" name="livraison" value="Canada"> Canada</label>
+                  <label class="radio-label"><input type="radio" name="livraison" value="Retrait en main propre"> Retrait en main propre</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <div class="form-label">Votre nom</div>
+                <input type="text" name="nom" placeholder="Prénom Nom" class="form-input">
+              </div>
+              <div class="form-group">
+                <div class="form-label">Votre e-mail</div>
+                <input type="email" name="email" placeholder="vous@exemple.com" class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-label">Message <span class="form-label-note">(dédicace, adresse, questions…)</span></div>
+              <textarea name="message" rows="3" placeholder="Une dédicace particulière ?" class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--dark btn--full">Préparer mon e-mail de commande</button>
+            <p class="form-note">Aucun paiement ici. Votre logiciel de mail s'ouvre avec la commande pré-remplie.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SALONS & RENCONTRES ═══ -->
+    <section class="s-salons" id="salons" aria-label="Salons et rencontres">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-eyebrow salons-eyebrow">Me rencontrer</div>
+          <h2 class="section-title salons-title">Salons &amp; <em>rencontres</em></h2>
+          <p class="section-subtitle">Venez repartir avec un livre dédicacé — ou retirer votre commande sur place.</p>
+        </div>
+
+        <div class="salons-grid">
+          <div class="salon-card" data-reveal>
+            <div class="salon-card__banner">Prochain salon</div>
+            <div class="salon-card__body">
+              <div class="salon-poster">
+                <span class="salon-poster__text">Affiche<br>du salon</span>
+                <span class="salon-poster__hint">à déposer</span>
+              </div>
+              <div class="salon-info">
+                <h3 class="salon-info__name">Salon du Livre de&nbsp;…</h3>
+                <div class="salon-info__place">Lieu · Ville à préciser</div>
+                <div class="salon-info__dates">
+                  <span class="salon-info__day">12–13</span>
+                  <div class="salon-info__month">septembre<br>2026</div>
+                </div>
+                <p class="salon-info__desc">Stand de dédicaces · retrait de commande possible.</p>
+                <a href="#" target="_blank" rel="noopener" class="salon-info__link">Organisé par … — voir le site ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="calendar-card" data-reveal>
+            <div class="cal-header">
+              <div class="cal-month">Septembre <span>2026</span></div>
+              <div class="cal-legend"><span class="cal-legend__dot"></span> Jour de salon</div>
+            </div>
+            <div class="cal-grid">
+              <div class="cal-weekdays">
+                <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+              </div>
+              <div class="cal-days">
+                <span></span>
+                <span>1</span><span>2</span><span>3</span><span>4</span>
+                <span class="cal-day--weekend">5</span><span class="cal-day--weekend">6</span>
+                <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+                <span class="cal-day--salon">12</span><span class="cal-day--salon">13</span>
+                <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+                <span class="cal-day--weekend">19</span><span class="cal-day--weekend">20</span>
+                <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+                <span class="cal-day--weekend">26</span><span class="cal-day--weekend">27</span>
+                <span>28</span><span>29</span><span>30</span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <p class="cal-note">D'autres dates à venir — et la campagne <strong>Ulule</strong> en octobre 2026. Inscrivez-vous à la newsletter pour ne rien manquer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ À PROPOS ═══ -->
+    <section class="s-apropos" id="apropos" aria-label="À propos de l'autrice">
+      <div class="container">
+        <div class="apropos-grid">
+
+          <div class="portrait-wrap" data-reveal>
+            <div class="portrait-frame">
+              <div class="portrait-img">
+                <span class="portrait-img__text">Photo de l'autrice</span>
+                <span class="portrait-img__hint">portrait · à déposer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bio" data-reveal>
+            <div class="section-eyebrow">L'autrice</div>
+            <h2 class="bio__name">Clémentine <em>Moury</em></h2>
+            <p class="bio__text">Autrice indépendante francophone, j'écris de la <strong>dark romance</strong> et de la <strong>romantasy</strong> — des histoires d'ombre et de lumière où les sentiments se vivent à pleine intensité.</p>
+            <p class="bio__text bio__placeholder"><em>(Texte d'amorce — à réécrire avec tes mots : ton parcours, ce qui t'a menée à l'écriture, ton univers, ce que tu aimes offrir à tes lectrices.)</em></p>
+            <blockquote class="bio__quote">« Des histoires qui touchent le cœur. »</blockquote>
+            <div class="bio__foot">
+              <span class="bio__signature">cm</span>
+              <a href="https://www.instagram.com/mouryclementine_auteur" target="_blank" rel="noopener" class="bio__insta">@mouryclementine_auteur ↗</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ NEWSLETTER & CONTACT ═══ -->
+    <section class="s-contact" id="contact" aria-label="Newsletter et contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="container contact-inner">
+
+        <div class="section-header" data-reveal>
+          <div class="section-eyebrow contact-eyebrow">Restons en lien</div>
+          <h2 class="section-title contact-title">Restons <em>en contact</em></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="newsletter-col" data-reveal>
+            <h3 class="contact-col-title">La lettre</h3>
+            <p class="contact-col-desc">Sorties, dédicaces, salons et coulisses d'écriture — quelques nouvelles, jamais trop. Désinscription en un clic.</p>
+            <!-- Remplace l'action par l'URL de ton formulaire Mailchimp / Brevo -->
+            <form class="newsletter-form" action="REMPLACER_PAR_TON_URL_MAILCHIMP" method="post" target="_blank">
+              <input type="email" name="EMAIL" required placeholder="votre e-mail" class="newsletter-input" aria-label="Votre adresse e-mail">
+              <button type="submit" class="newsletter-btn">S'inscrire</button>
+            </form>
+            <p class="form-note form-note--dark">// action à brancher sur Mailchimp/Brevo</p>
+          </div>
+
+          <div class="contact-col" data-reveal>
+            <h3 class="contact-col-title">M'écrire</h3>
+            <p class="contact-col-desc">Une question, un projet, un mot doux ? Pour commander un livre, passez plutôt par <a href="#commander" class="contact-inline-link">Commander en direct</a>.</p>
+            <a href="mailto:contact@clementinemoury.com" class="contact-email">contact@clementinemoury.com</a>
+            <div class="contact-socials">
+              <a href="https://www.instagram.com/mouryclementine_auteur" target="_blank" rel="noopener" class="social-link">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer" role="contentinfo">
+          <div class="footer-brand">
+            <span class="footer-logo">cm</span>
+            <span class="footer-name">Murmure des messages</span>
+          </div>
+          <nav class="footer-nav" aria-label="Navigation secondaire">
+            <a href="#livres">Les livres</a>
+            <a href="#commander">Commander</a>
+            <a href="#salons">Salons</a>
+            <a href="#apropos">À propos</a>
+          </nav>
+          <div class="footer-copy">© 2026 Clémentine Moury</div>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
