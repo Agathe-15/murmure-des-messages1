@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" data-season="ete">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Clémentine Moury — Newsletter, questions et messages doux.">
+  <title>Contact — Murmure des Messages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cmu-serif" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Header visible sur tous les fonds */
+    .site-header {
+      background: rgba(251, 245, 236, 0.98) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header js-header" role="banner">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__logo" href="index.html" aria-label="Murmure des Messages — Accueil">cm</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="livres.html">Les livres</a></li>
+        <li><a href="commander.html">Commander</a></li>
+        <li><a href="salons.html">Salons</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="season-btn js-season-btn" aria-label="Changer de saison">
+          <span class="js-season-icon">☀️</span>
+        </button>
+        <button class="nav__hamburger js-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══ NEWSLETTER & CONTACT ═══ -->
+    <section class="s-contact" aria-label="Newsletter et contact" style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 80px 0 200px 0;">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="container contact-inner">
+
+        <div class="section-header" data-reveal>
+          <div class="section-eyebrow contact-eyebrow">Restons en lien</div>
+          <h1 class="section-title contact-title">Restons <em>en contact</em></h1>
+        </div>
+
+        <div class="contact-grid">
+          <div class="newsletter-col" data-reveal>
+            <h3 class="contact-col-title">La lettre</h3>
+            <p class="contact-col-desc">Sorties, dédicaces, salons et coulisses d'écriture — quelques nouvelles, jamais trop. Désinscription en un clic.</p>
+            <!-- Remplace l'action par l'URL de ton formulaire Mailchimp / Brevo -->
+            <form class="newsletter-form" action="REMPLACER_PAR_TON_URL_MAILCHIMP" method="post" target="_blank">
+              <input type="email" name="EMAIL" required placeholder="votre e-mail" class="newsletter-input" aria-label="Votre adresse e-mail">
+              <button type="submit" class="newsletter-btn">S'inscrire</button>
+            </form>
+            <p class="form-note form-note--dark">// action à brancher sur Mailchimp/Brevo</p>
+          </div>
+
+          <div class="contact-col" data-reveal>
+            <h3 class="contact-col-title">M'écrire</h3>
+            <p class="contact-col-desc">Une question, un projet, un mot doux ? Pour commander un livre, passez plutôt par <a href="commander.html" class="contact-inline-link">Commander en direct</a>.</p>
+            <a href="mailto:contact@clementinemoury.com" class="contact-email">contact@clementinemoury.com</a>
+            <div class="contact-socials">
+              <a href="https://www.instagram.com/mouryclementine_auteur" target="_blank" rel="noopener" class="social-link">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

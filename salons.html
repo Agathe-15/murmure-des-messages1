@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr" data-season="ete">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rencontrez Clémentine Moury aux salons du livre — dédicaces et retrait de commande.">
+  <title>Salons &amp; Rencontres — Murmure des Messages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cmu-serif" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header js-header" role="banner">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__logo" href="index.html" aria-label="Murmure des Messages — Accueil">cm</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="livres.html">Les livres</a></li>
+        <li><a href="commander.html">Commander</a></li>
+        <li><a href="salons.html">Salons</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="season-btn js-season-btn" aria-label="Changer de saison">
+          <span class="js-season-icon">☀️</span>
+        </button>
+        <button class="nav__hamburger js-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══ SALONS & RENCONTRES ═══ -->
+    <section class="s-salons" aria-label="Salons et rencontres">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-eyebrow salons-eyebrow">Me rencontrer</div>
+          <h1 class="section-title salons-title">Salons &amp; <em>rencontres</em></h1>
+          <p class="section-subtitle">Venez repartir avec un livre dédicacé — ou retirer votre commande sur place.</p>
+        </div>
+
+        <div class="salons-grid">
+          <div class="salon-card" data-reveal>
+            <div class="salon-card__banner">Prochain salon</div>
+            <div class="salon-card__body">
+              <div class="salon-poster">
+                <span class="salon-poster__text">Affiche<br>du salon</span>
+                <span class="salon-poster__hint">à déposer</span>
+              </div>
+              <div class="salon-info">
+                <h3 class="salon-info__name">Salon du Livre de&nbsp;…</h3>
+                <div class="salon-info__place">Lieu · Ville à préciser</div>
+                <div class="salon-info__dates">
+                  <span class="salon-info__day">12–13</span>
+                  <div class="salon-info__month">septembre<br>2026</div>
+                </div>
+                <p class="salon-info__desc">Stand de dédicaces · retrait de commande possible.</p>
+                <a href="#" target="_blank" rel="noopener" class="salon-info__link">Organisé par … — voir le site ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="calendar-card" data-reveal>
+            <div class="cal-header">
+              <div class="cal-month">Septembre <span>2026</span></div>
+              <div class="cal-legend"><span class="cal-legend__dot"></span> Jour de salon</div>
+            </div>
+            <div class="cal-grid">
+              <div class="cal-weekdays">
+                <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+              </div>
+              <div class="cal-days">
+                <span></span>
+                <span>1</span><span>2</span><span>3</span><span>4</span>
+                <span class="cal-day--weekend">5</span><span class="cal-day--weekend">6</span>
+                <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+                <span class="cal-day--salon">12</span><span class="cal-day--salon">13</span>
+                <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+                <span class="cal-day--weekend">19</span><span class="cal-day--weekend">20</span>
+                <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+                <span class="cal-day--weekend">26</span><span class="cal-day--weekend">27</span>
+                <span>28</span><span>29</span><span>30</span>
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+            <p class="cal-note">D'autres dates à venir — et la campagne <strong>Ulule</strong> en octobre 2026. Inscrivez-vous à la newsletter pour ne rien manquer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

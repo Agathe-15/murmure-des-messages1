@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" data-season="ete">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commander en direct les livres de Clémentine Moury — dédicacés et expédiés de sa main.">
+  <title>Commander en direct — Murmure des Messages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cmu-serif" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header js-header" role="banner">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__logo" href="index.html" aria-label="Murmure des Messages — Accueil">cm</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="livres.html">Les livres</a></li>
+        <li><a href="commander.html">Commander</a></li>
+        <li><a href="salons.html">Salons</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="season-btn js-season-btn" aria-label="Changer de saison">
+          <span class="js-season-icon">☀️</span>
+        </button>
+        <button class="nav__hamburger js-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══ COMMANDER EN DIRECT ═══ -->
+    <section class="s-commander" aria-label="Commander en direct">
+      <div class="container">
+        <div class="commander-grid">
+
+          <div class="commander-info" data-reveal>
+            <div class="section-eyebrow commander-eyebrow">Sans intermédiaire</div>
+            <h1 class="section-title">Commander <em>en direct</em></h1>
+            <p class="commander-subtitle">Un livre dédicacé, expédié de ma main à la vôtre.</p>
+
+            <div class="steps">
+              <div class="step">
+                <div class="step__num">1</div>
+                <div>
+                  <div class="step__title">Vous m'écrivez</div>
+                  <p class="step__desc">Remplissez le formulaire : il génère un e-mail pré-rempli avec votre choix de tomes et la livraison.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__num">2</div>
+                <div>
+                  <div class="step__title">Je confirme &amp; vous encaisse</div>
+                  <p class="step__desc">Je réponds avec le total. Paiement par carte (SumUp) ou virement — pas de paiement en ligne sur le site.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step__num">3</div>
+                <div>
+                  <div class="step__title">Réception</div>
+                  <p class="step__desc">Livraison en France ou au Canada, ou retrait en main propre (salons, événements).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="order-form" id="order-form" data-reveal>
+            <h3 class="order-form__title">Votre commande</h3>
+
+            <div class="form-group">
+              <div class="form-label">Quel(s) livre(s) ?</div>
+              <div class="checkboxes">
+                <label class="check-label"><input type="checkbox" name="livres" value="Fragments (Tome I)"> Fragments — Tome I</label>
+                <label class="check-label"><input type="checkbox" name="livres" value="Héritage (Tome II)"> Héritage — Tome II</label>
+                <label class="check-label"><input type="checkbox" name="livres" value="Pouvoir (Tome III)"> Pouvoir — Tome III</label>
+                <label class="check-label"><input type="checkbox" name="livres" value="La trilogie complète"> La trilogie complète</label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group form-group--sm">
+                <div class="form-label">Quantité</div>
+                <select name="quantite" class="form-select">
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+                </select>
+              </div>
+              <div class="form-group form-group--lg">
+                <div class="form-label">Livraison</div>
+                <div class="radios">
+                  <label class="radio-label"><input type="radio" name="livraison" value="France" checked> France</label>
+                  <label class="radio-label"><input type="radio" name="livraison" value="Canada"> Canada</label>
+                  <label class="radio-label"><input type="radio" name="livraison" value="Retrait en main propre"> Retrait en main propre</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <div class="form-label">Votre nom</div>
+                <input type="text" name="nom" placeholder="Prénom Nom" class="form-input">
+              </div>
+              <div class="form-group">
+                <div class="form-label">Votre e-mail</div>
+                <input type="email" name="email" placeholder="vous@exemple.com" class="form-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-label">Message <span class="form-label-note">(dédicace, adresse, questions…)</span></div>
+              <textarea name="message" rows="3" placeholder="Une dédicace particulière ?" class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--dark btn--full">Préparer mon e-mail de commande</button>
+            <p class="form-note">Aucun paiement ici. Votre logiciel de mail s'ouvre avec la commande pré-remplie.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

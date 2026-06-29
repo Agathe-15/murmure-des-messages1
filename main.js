@@ -195,8 +195,23 @@ function initOrderForm() {
   });
 }
 
+// ─── Footer loader ───────────────────────────────────────────────
+async function loadFooter() {
+  try {
+    const response = await fetch('footer.html');
+    if (!response.ok) throw new Error('Footer load failed');
+    const html = await response.text();
+    const main = document.querySelector('main');
+    if (!main) return;
+    main.insertAdjacentHTML('afterend', html);
+  } catch (err) {
+    console.warn('Could not load footer:', err.message);
+  }
+}
+
 // ─── Boot ─────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadFooter();
   initSeason();
   initNav();
   initOrderForm();
